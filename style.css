@@ -36,7 +36,8 @@ html {
  */
 body {
   margin: 0;
-  overflow-x: hidden;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 /**
@@ -3851,7 +3852,7 @@ table th a:hover, table tr a:hover {
 }
 .shop_table tbody td {
   padding-top: 30px; 
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 .shop_table tbody tr {
   border-bottom: 1px solid #e1e1e1;
