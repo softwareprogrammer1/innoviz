@@ -4682,3 +4682,17 @@ table .cart-subtotal {
     margin-bottom: 20px;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigation-2 {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+section[id] {
+  scroll-margin-top: 50px; /* Adjust this to match your header height */
+}
