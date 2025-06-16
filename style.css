@@ -4696,3 +4696,16 @@ html {
 section[id] {
   scroll-margin-top: 50px; /* Adjust this to match your header height */
 }
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: none; /* default hidden */
+  opacity: 0.9;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#back-to-top.show {
+  display: block;
+}
