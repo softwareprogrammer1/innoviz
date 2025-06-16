@@ -27,6 +27,7 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Sections
@@ -4681,4 +4682,18 @@ table .cart-subtotal {
   .event-link a {
     margin-bottom: 20px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navigation-2 {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+section[id] {
+  scroll-margin-top: 100px; /* Adjust this to match your header height */
 }
