@@ -189,7 +189,7 @@
 						<div class="services-box-3">
 							<div class="services-content">
 								<h4><a href="services-detail.html">TELECOMMUNICATION SYSTEMS</a></h4>
-								<a class="view-detail" href="#"><i
+								<a class="view-detail telecom-gallery-trigger" href="#" title="Click to view gallery"><i
 										class="no-margin-left icon ion-md-add-circle-outline"></i></a>
 							</div>
 							<div class="services-icon">
@@ -201,7 +201,7 @@
 						<div class="services-box-3">
 							<div class="services-content">
 								<h4><a href="services-detail.html">FIRE & GAS DETECTION SYSTEMS</a></h4>
-								<a class="view-detail" href="#"><i
+								<a class="view-detail firegas-gallery-trigger" href="#" title="Click to view gallery"><i
 										class="no-margin-left icon ion-md-add-circle-outline"></i></a>
 							</div>
 							<div class="services-icon">
@@ -213,7 +213,7 @@
 						<div class="services-box-3 no-margin-md-bottom">
 							<div class="services-content">
 								<h4><a href="services-detail.html">CONTROL & INSTRUMENTATION</a></h4>
-								<a class="view-detail" href="#"><i
+								<a class="view-detail controlinst-gallery-trigger" href="#" title="Click to view gallery"><i
 										class="no-margin-left icon ion-md-add-circle-outline"></i></a>
 							</div>
 							<div class="services-icon">
@@ -225,7 +225,7 @@
 						<div class="services-box-3 no-margin-md-bottom">
 							<div class="services-content">
 								<h4><a href="services-detail.html">INSPECTION & MAINTENANCE</a></h4>
-								<a class="view-detail" href="#"><i
+								<a class="view-detail inspection-gallery-trigger" href="#" title="Click to view gallery"><i
 										class="no-margin-left icon ion-md-add-circle-outline"></i></a>
 							</div>
 							<div class="services-icon">
@@ -249,7 +249,7 @@
 						<div class="services-box-3 no-margin-md-bottom">
 							<div class="services-content">
 								<h4><a href="services-detail.html">SPARE PART SUPPORT & CALIBRATION SERVICE</a></h4>
-								<a class="view-detail" href="#"><i
+								<a class="view-detail spareparts-gallery-trigger" href="#" title="Click to view gallery"><i
 										class="no-margin-left icon ion-md-add-circle-outline"></i></a>
 							</div>
 							<div class="services-icon">
@@ -269,7 +269,7 @@
 					<div class="col-md-6 col-sm-12">
 						<div class="home-about">
 							<h4 class="text-primary">OUR STORY</h4>
-							<h2>Connecting things, It’s all about people.</h2>
+							<h2>Connecting things, It's all about people.</h2>
 							<p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes
 								the upper surface of the impenetrable foliage of my trees, and but a few stray gleams
 								steal into the inner sanctuary, I throw myself down among the tall grass by the
@@ -337,7 +337,7 @@
 					</div>
 					<div class="col-md-6 col-xs-12">
 						<h4 class="text-primary">FEATURE</h4>
-						<h3>Why we’re different</h3>
+						<h3>Why we're different</h3>
 						<p>As fellow entrepreneurs, we understand the need for space which gives your business room</p>
 						<ul class="unstyle no-margin-bottom">
 							<li><i class="icon ion-md-checkmark-circle"></i><a href="#">Flexible solutions</a></li>
@@ -522,9 +522,9 @@
 							<div>
 								<div class="testi-box">
 									<div class="testi-content">
-										<p>“I am so happy, my dear friend, so absorbed in the exquisite sense of mere
+										<p>"I am so happy, my dear friend, so absorbed in the exquisite sense of mere
 											tranquil existence, that I neglect my talents. I should be incapable of
-											drawing a single stroke at the present moment.”</p>
+											drawing a single stroke at the present moment."</p>
 									</div>
 									<div class="testi-info">
 										<img src="./images/testi-img-1.png" alt="" class="circle-img">
@@ -592,7 +592,7 @@
 								<div class="col-md-6">
 									<h3>Recruitment</h3>
 									<p>We are looking for smart individuals who want to have a positive impact on the
-										world. If that’s you, visit our Careers page or send us a CV at:
+										world. If that's you, visit our Careers page or send us a CV at:
 										<a class="text-primary" href="#">hr@innvoiz.com</a>
 									</p>
 								</div>
@@ -678,7 +678,7 @@
 								</header>
 
 								<div class="entry-summary">
-									<p> “Future technologies will continue to increase the possibilities within IoT in
+									<p> "Future technologies will continue to increase the possibilities within IoT in
 										general, and transportation...</p>
 								</div>
 
@@ -707,7 +707,7 @@
 											<a href="#" rel="category tag">Oil & Gas</a>
 										</span>
 									</div>
-									<h3 class="entry-title"><a href="post.html" rel="bookmark">The brains behind Uber’s
+									<h3 class="entry-title"><a href="post.html" rel="bookmark">The brains behind Uber's
 											autonomous future</a></h3>
 								</header>
 								<div class="entry-summary">
@@ -850,6 +850,38 @@
 	<script src='js/jquery.magnific-popup.min.js'></script>
 	<script src='js/jquery.isotope.min.js'></script>
 	<script src='js/scripts.js'></script>
+
+	<!-- Hidden gallery for telecommunication -->
+	<div id="telecom-gallery" style="display:none;">
+		<a class="image-link" href="images/company/telecommunication/telecomms.jpg" title="Telecomms"></a>
+		<a class="image-link" href="images/company/telecommunication/paga.jpg" title="PAGA"></a>
+	</div>
+
+	<!-- Hidden gallery for fire & gas detection -->
+	<div id="firegas-gallery" style="display:none;">
+		<a class="image-link" href="images/company/fire-gas-detection/fire-and-gas.jpg" title="Fire and Gas"></a>
+		<a class="image-link" href="images/company/fire-gas-detection/fire-gas-panel.jpg" title="Fire Gas Panel"></a>
+	</div>
+
+	<!-- Hidden gallery for control & instrumentation -->
+	<div id="controlinst-gallery" style="display:none;">
+		<a class="image-link" href="images/company/control-and-instrumentation/damper-control.jpg" title="Damper Control"></a>
+		<a class="image-link" href="images/company/control-and-instrumentation/drager-f-g-cleanup.jpg" title="Drager F&G Cleanup"></a>
+		<a class="image-link" href="images/company/control-and-instrumentation/tank-gauging-cleanup.jpg" title="Tank Gauging Cleanup"></a>
+		<a class="image-link" href="images/company/control-and-instrumentation/tank-guaging-and-main-panel.jpg" title="Tank Guaging and Main Panel"></a>
+	</div>
+
+	<!-- Hidden gallery for inspection & maintenance -->
+	<div id="inspection-gallery" style="display:none;">
+		<a class="image-link" href="images/company/inspection-and-maintenance/alarm-mmonitor-repeater-panel.jpg" title="Alarm Monitor Repeater Panel"></a>
+		<a class="image-link" href="images/company/inspection-and-maintenance/alarm-monitoring.jpg" title="Alarm Monitoring"></a>
+	</div>
+
+	<!-- Hidden gallery for troubleshooting & fix -->
+	<div id="troubleshooting-gallery" style="display:none;">
+		<a class="image-link" href="images/company/troubleshooting-and-fix/esd.jpg" title="ESD"></a>
+		<a class="image-link" href="images/company/troubleshooting-and-fix/tank-guaging-and-plc.jpg" title="Tank Guaging and PLC"></a>
+	</div>
 
 </body>
 

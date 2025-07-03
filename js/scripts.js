@@ -671,4 +671,59 @@ if ($('.image-link').length) {
 
     });// JavaScript Document
 }
+
+// Generic gallery popup setup function
+function setupGalleryTrigger(triggerSelector, images) {
+    $(triggerSelector).on('click', function(e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+        $.magnificPopup.open({
+            items: images,
+            gallery: { enabled: true },
+            type: 'image',
+            mainClass: 'mfp-with-zoom',
+            image: { titleSrc: 'title' },
+            zoom: {
+                enabled: true,
+                duration: 300,
+                easing: 'ease-in-out',
+                opener: function() { return $('body'); }
+            },
+            showCloseBtn: true
+        });
+    });
+}
+
+// Setup all service galleries
+setupGalleryTrigger('.telecom-gallery-trigger', [
+    { src: 'images/company/telecommunication/telecomms.jpg', title: 'Tele Comms', type: 'image' },
+    { src: 'images/company/telecommunication/paga.jpg', title: 'PAGA', type: 'image' }
+]);
+
+setupGalleryTrigger('.firegas-gallery-trigger', [
+    { src: 'images/company/fire-gas-detection/fire-and-gas.jpg', title: 'Fire and Gas', type: 'image' },
+    { src: 'images/company/fire-gas-detection/fire-gas-panel.jpg', title: 'Fire Gas Panel', type: 'image' }
+]);
+
+setupGalleryTrigger('.controlinst-gallery-trigger', [
+    { src: 'images/company/control-and-instrumentation/damper-control.jpg', title: 'Damper Control', type: 'image' },
+    { src: 'images/company/control-and-instrumentation/drager-f-g-cleanup.jpg', title: 'Drager F & G Cleanup', type: 'image' },
+    { src: 'images/company/control-and-instrumentation/tank-gauging-cleanup.jpg', title: 'Tank Gauging Cleanup', type: 'image' },
+    { src: 'images/company/control-and-instrumentation/tank-guaging-and-main-panel.jpg', title: 'Tank Guaging and Main Panel', type: 'image' }
+]);
+
+setupGalleryTrigger('.inspection-gallery-trigger', [
+    { src: 'images/company/inspection-and-maintenance/alarm-mmonitor-repeater-panel.jpg', title: 'Alarm Monitor Repeater Panel', type: 'image' },
+    { src: 'images/company/inspection-and-maintenance/alarm-monitoring.jpg', title: 'Alarm Monitoring', type: 'image' }
+]);
+
+setupGalleryTrigger('.troubleshooting-gallery-trigger', [
+    { src: 'images/company/troubleshooting-and-fix/esd.jpg', title: 'ESD', type: 'image' },
+    { src: 'images/company/troubleshooting-and-fix/tank-guaging-and-plc.jpg', title: 'Tank Guaging and PLC', type: 'image' }
+]);
+
+setupGalleryTrigger('.spareparts-gallery-trigger', [
+    { src: 'images/company/spareparts-support-and-calibration/fire-system-spares.jpg', title: 'Fire System Spares', type: 'image' },
+    { src: 'images/company/spareparts-support-and-calibration/sensepoint-spareparts.jpg', title: 'Sensepoint Spareparts', type: 'image' }
+]);
 } )( jQuery );
